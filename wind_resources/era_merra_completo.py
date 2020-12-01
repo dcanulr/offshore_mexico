@@ -51,7 +51,8 @@ for i in years:
 
 
 ##### Datos a 119M
-merra_ws_119 = np.asarray(merra_anual.WS_119)
+#merra_ws_119 = np.asarray(merra_anual.WS_119)
+merra_ws_119 = np.asarray(merra.WS_119)
 
 #Save csv
 for i in years:
@@ -101,14 +102,16 @@ era_lon = np.asarray(era_anual.longitude)
 np.savetxt('era_lon.csv', era_lon)
 
 ###### Datos a 90m
-era_ws_90 = np.asarray(era_anual.WS_90)
+#era_ws_90 = np.asarray(era_anual.WS_90)
+era_ws_90 = np.asarray(era.WS_90)
 
 #Save CSV
 for i in years:
 	np.savetxt('era_anual_mean_90m_{}.csv'.format(1980+i), era_ws_90[i])
 
 ###### Datos a 119m
-era_ws_119 = np.asarray(era_anual.WS_119)
+#era_ws_119 = np.asarray(era_anual.WS_119)
+era_ws_119 = np.asarray(era.WS_119)
 
 #Save CSV
 for i in years:
